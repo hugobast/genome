@@ -1,6 +1,6 @@
 require 'bio'
 
-sequence = Bio::FlatFile.auto("CP001844.gbk.txt")
+sequence = Bio::FlatFile.auto("specs/fixtures/CP001844.gbk")
 
 sequence.each do |entry|
   entry.features.each do |feature|
