@@ -1,4 +1,5 @@
 .idea
+.rspec
 .ruby-version
 *.gbk
 
