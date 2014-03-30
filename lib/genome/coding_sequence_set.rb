@@ -3,7 +3,7 @@ require 'forwardable'
 class CodingSequenceSet
   extend Forwardable
   attr_reader :entry, :cds
-  def_delegators :@cds, :count, :first
+  def_delegators :@cds, :count, :first, :each
 
   def initialize(entry)
     @entry = entry

@@ -18,6 +18,12 @@ class Genome
     entry.naseq[range]
   end
 
+  def each_coding_sequences
+    coding_sequences.each do |cds|
+      yield cds
+    end
+  end
+
   def species
     entry.source.fetch("common_name")
   end
